@@ -321,16 +321,9 @@ bool events::out::generictext(std::string packet) {
                "\nadd_image_button|banner|interface/large/special_event.rttex|bannerlayout|||"
                 "\nadd_spacer|small"
                 "\nadd_textbox|`9This Proxy Made by Ama6nen and Re-Edit By FakeModz#1192|left|2480|"
-                "\nadd_textbox|`9Command List for command list please do /phelp|left|2480|"
-                "\nadd_textbox|`9Thanks to :|left|2480|"
-                "\nadd_textbox|`9Gucktube YT|left|2480|"
-                "\nadd_textbox|`9Ama6nen|left|2480|"
-                "\nadd_textbox|`9Genta 7740|left|2480|"
-                "\nadd_textbox|`9BotHax YT|left|2480|"
-                "\nadd_textbox|`9SrMotion|left|2480|"
-                "\nadd_textbox|`9If you Want Re-Edit this proxy please|left|2480|"
-                "\nadd_textbox|`9Dont Edit/Delete The Credits!!!|left|2480|"
-                "\nadd_textbox|`9or you will dieee !!!!!|left|2480|"
+
+
+
                 "\nadd_quick_exit|"
                 "\nend_dialog|end|Cancel|Okay|";
             variantlist_t liste{ "OnDialogRequest" };
@@ -481,7 +474,7 @@ bool events::in::variantlist(gameupdatepacket_t* packet) {
         case fnv32("OnSendToServer"): g_server->redirect_server(varlist); return true;
 
         case fnv32("OnConsoleMessage"): {
-            varlist[1] = "`b[ANDROID PROXY]`` " + varlist[1].get_string();
+            varlist[1] = "`b[`4KINDOFF PROXY`b]`` " + varlist[1].get_string();
             g_server->send(true, varlist);
             return true;
         } break;
