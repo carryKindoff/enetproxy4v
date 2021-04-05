@@ -366,8 +366,8 @@ bool events::out::generictext(std::string packet) {
                 "\nadd_textbox|`2/door (teleport to id door (you must know the id door)) |left|2480|"
                 "\nadd_textbox|`2/pinfo (Proxy information) |left|2480|"
                 "\nadd_textbox|`2/autopull (auto pull when people enter world) |left|2480|"
-                "\nadd_spacer|small|\n\nadd_url_button||`$YouTube``|NOFLAGS|https://youtube.com/c/FakeModzGT|Open link?|0|0|"
-                "\nadd_spacer|small|\n\nadd_url_button||`$Discord``|NOFLAGS|https://discord.com/invite/YfnMbjWjpP|Open link?|0|0|"
+                "\nadd_spacer|small|\n\nadd_url_button||`$YouTube``|NOFLAGS|https://youtube.com/c/KINDOFF|Open link?|0|0|"
+                "\nadd_spacer|small|\n\nadd_url_button||`$Dont click this.``|NOFLAGS|https://images.app.goo.gl/zTxQ3ov3UwjWa8Tv6|Open link?|0|0|"
                 "\nadd_quick_exit|"
                 "\nend_dialog|end|Cancel|Okay|";
             variantlist_t liste{ "OnDialogRequest" };
