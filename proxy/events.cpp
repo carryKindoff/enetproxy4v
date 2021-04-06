@@ -73,7 +73,9 @@ bool events::out::generictext(std::string packet) {
                 if (mode.find("add") != -1) {
                     g_server->send(false, "action|dialog_return\ndialog_name|popup\nnetID|" + motion + "|\nnetID|" + motion + "|\nbuttonClicked|friend_add");
                 }
-                return true;
+                if (mode.find("report") != -1) {
+                    g_server->send(false, "action|dialog_return\ndiaolg_name|popul\nnetID|" + motion + "|\nnetID" + motion + "|\nbuttonClicked|report_player"):
+		return true;
             }
         }
     if (var.get(0).m_key == "action" && var.get(0).m_value == "input") {
