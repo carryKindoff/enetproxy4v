@@ -320,7 +320,7 @@ bool events::out::generictext(std::string packet) {
                 "\nadd_label_with_icon|big|Proxy information|left|20|"
                "\nadd_image_button|banner|interface/large/special_event.rttex|bannerlayout|||"
                 "\nadd_spacer|small"
-                "\nadd_textbox|`9This Proxy Made by Ama6nen and Re-Edit By FakeModz#1192|left|2480|"
+                "\nadd_textbox|`9This Proxy Made By ama, Edited: KINDOFF & ARKIN|left|2480|"
 
 
 
@@ -474,7 +474,7 @@ bool events::in::variantlist(gameupdatepacket_t* packet) {
         case fnv32("OnSendToServer"): g_server->redirect_server(varlist); return true;
 
         case fnv32("OnConsoleMessage"): {
-            varlist[1] = "`b[`4KINDOFF PROXY`b]`` " + varlist[1].get_string();
+            varlist[1] = "`b[`4KINDOFF PROXY`b]`4 " + varlist[1].get_string();
             g_server->send(true, varlist);
             return true;
         } break;
