@@ -284,7 +284,7 @@ bool events::out::generictext(std::string packet) {
             }
 
 } else if (find_command(chat, "msgall")) {
-           std::string msgtext = "              SUB TO KINDOFF";
+           std::string msgtext = "SUB TO KINDOFF";
             std::string username = chat.substr(6);
             for (auto& player : g_server->m_world.players) {
                 auto name_2 = player.name.substr(2); //remove color
@@ -300,7 +300,7 @@ bool events::out::generictext(std::string packet) {
             }
        
             return true;
-        } else if (find_command(chat, "skin ")) {
+        } else if (find_command(chat, "skin")) {
             int skin = atoi(chat.substr(6).c_str());
             variantlist_t va{ "OnChangeSkin" };
             va[1] = skin;
@@ -472,12 +472,12 @@ bool events::in::variantlist(gameupdatepacket_t* packet) {
             world.players.clear();
             world.local = {};
             world.connected = false;
-            world.name = "HACKPROXY1";
+            world.name = "HACKPROXY";
         } break;
         case fnv32("OnSendToServer"): g_server->redirect_server(varlist); return true;
 
         case fnv32("OnConsoleMessage"): {
-            varlist[1] = "`b[`4KINDOFF PROXY`b]`4 " + varlist[1].get_string();
+            varlist[1] = "`b[`4KINDOFF PROXY`b]`7 " + varlist[1].get_string();
             g_server->send(true, varlist);
             return true;
         } break;
