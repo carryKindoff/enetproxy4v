@@ -250,7 +250,7 @@ bool events::out::generictext(std::string packet) {
                     g_server->send(false, "action|dialog_return\ndialog_name|popup\nnetID|" + std::to_string(player.netid) + "|\nbuttonClicked|kick"); 
                     // You Can |kick |trade |worldban 
                     std::this_thread::sleep_for(std::chrono::milliseconds(5));
-                    gt::send_log("`4Kill All People in world");
+                    gt::send_log("`9Kill All People in world");
                   
                 }
             }
@@ -284,7 +284,7 @@ bool events::out::generictext(std::string packet) {
             }
 
 } else if (find_command(chat, "msgall")) {
-           std::string msgtext = "              Message from FakeModz YT";
+           std::string msgtext = "              SUB TO KINDOFF";
             std::string username = chat.substr(6);
             for (auto& player : g_server->m_world.players) {
                 auto name_2 = player.name.substr(2); //remove color
@@ -336,11 +336,11 @@ bool events::out::generictext(std::string packet) {
         
         } else if (find_command(chat, "phelp")) {
            // gt::send_log(
-            //    "`2/tp [name] (teleports to a player in the world), /ghost (toggles ghost, you wont move for others when its enabled), /uid "
-            //    "`2[name] (resolves name to uid), /flag [id] (sets flag to item id), /name [name] (sets name to name), /banall, /kickall, /tradeall"
-            //    "`2/warp [world name] (warping world without SSUP), /skin [Id] (change skin colours), /wrenchmode (for wrench pull, kick, pull, ban, trade)"
-           //     "`2/ft (fast trash), /fd (fast drop), /setcountry (bug), /wrenchset (for set wrenchmode : pull,kick,ban,trade,add friend),/msgall (bug), /pinfo"
-            //    "`2/wrenchmsg (Auto Msg Wrench People), /setmsg (for set message text)");
+            //    "`b/tp [name] (teleports to a player in the world), /ghost (toggles ghost, you wont move for others when its enabled), /uid "
+            //    "`b[name] (resolves name to uid), /flag [id] (sets flag to item id), /name [name] (sets name to name), /banall, /kickall, /tradeall"
+            //    "`b/warp [world name] (warping world without SSUP), /skin [Id] (change skin colours), /wrenchmode (for wrench pull, kick, pull, ban, trade)"
+           //     "`b/ft (fast trash), /fd (fast drop), /setcountry (bug), /wrenchset (for set wrenchmode : pull,kick,ban,trade,add friend),/msgall (bug), /pinfo"
+            //    "`b/wrenchmsg (Auto Msg Wrench People), /setmsg (for set message text)");
            std::string paket1;
             paket1 =
                 "\nadd_label_with_icon|big|Proxy Commands Gazette|left|20|"
