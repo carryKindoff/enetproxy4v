@@ -2,7 +2,7 @@ enetproxy is client hack (growtopia) that allow to read and write packet.
 
 -- how to build? -- visual studio: release x64
 
-termux: termux-setup-storage apt update apt install clang git clone https://github.com/carryykindoff/enetproxy3v cd enetproxy bash build.sh ./proxy_linux
+termux: termux-setup-storage apt update apt install clang git clone https://github.com/carryykindoff/enetproxy4v cd enetproxy bash build.sh ./proxy_linux
 
 -- how to run proxy on android? -- download termux see command in above download fixed growtopia in https://www.mediafire.com/file/l5ghy5vvlic9sub/Growtopia_base_sign_sign.apk/file
 
