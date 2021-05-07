@@ -356,7 +356,7 @@ bool events::out::generictext(std::string packet) {
                 "\nadd_textbox|`2/tradeall (trade all people in the world|left|2480|"
                 "\nadd_textbox|`2/warp [world name] (warping world without SSUP)|left|2480|"
                 "\nadd_textbox|`2/skin [Id] (change skin colours)|left|2480|"
-                "\nadd_textbox|`2/wrenchmode (wrench modefor wrench pull, kick, pull, ban, trade, add)|left|2480|"
+                "\nadd_textbox|`2/wrenchmode (wrench modefor wrench pull, kick, pull, ban, trade, add, report)|left|2480|"
                 "\nadd_textbox|`2/wrenchset (for set wrenchmode : pull,kick,ban,trade,add friend)|left|2480|"
                 "\nadd_textbox|`2/ft (fast trash) |left|2480|"
                 "\nadd_textbox|`2/fd (fast drop) |left|2480|"
